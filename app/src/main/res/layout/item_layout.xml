@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shintellilink.slidingrecyclerviewdelete.MyLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/item_content"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="内容"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorAccent"></View>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_delete"
+        android:layout_width="90dp"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@id/item_content"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:clickable="true"
+        android:text="删除"
+        android:textColor="#ffffff" />
+
+</shintellilink.slidingrecyclerviewdelete.MyLinearLayout>
